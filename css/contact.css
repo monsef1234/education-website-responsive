@@ -120,4 +120,7 @@
   .contact .contact_container .box:nth-child(2) form .full-name {
     flex-direction: column;
   }
+  .contact .contact_container .box:nth-child(2) form .full-name input {
+    width: 100%;
+  }
 }

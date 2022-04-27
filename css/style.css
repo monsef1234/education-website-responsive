@@ -36,6 +36,21 @@ body {
   color: var(--clr-white);
   background: var(--clrBg);
 }
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: var(--clrBg);
+  display: grid;
+  place-content: center;
+  z-index: 11;
+}
+.loader img {
+  width: 6rem;
+}
+.hide-loader {
+  display: none;
+}
 h1,
 h2,
 h3,
@@ -323,6 +338,7 @@ header .nav_container button {
 /* Start Testimonials */
 .testimonials {
   margin: 5rem 0;
+  position: relative;
 }
 .testimonials h1 {
   text-align: center;
@@ -367,6 +383,10 @@ header .nav_container button {
   width: 3rem;
   height: 3rem;
   transform: translateX(-50%) rotate(45deg);
+}
+.swiper-pagination {
+  bottom: -45px !important;
+  z-index: 9 !important;
 }
 /* End Testimonials */
 /* Start footer */
