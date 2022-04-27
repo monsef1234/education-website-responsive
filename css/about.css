@@ -155,7 +155,17 @@
 /* Media Query [TABLETS] */
 @media screen and (max-width: 1024px) {
   .achievements .achievements_container {
-    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .achievements .achievements_container .box img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* Media Query [MOBILE] */
+@media screen and (max-width: 600px) {
+  .achievements .achievements_container .box {
+    text-align: center;
   }
 }
